@@ -1,0 +1,64 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: 'Noto Sans JP', sans-serif;
+}
+
+.cursive {
+     color: #0D7AB9;
+     font-family: 'Dancing Script', cursive;
+}
+
+.btn {
+     border: none;
+     display: flex;
+     font-weight: 600;
+     color: #0D7AB9;
+     background: none;
+     margin-left: auto;
+     padding: 15px 20px;
+     border-radius: 5px;
+     letter-spacing: 2px;
+     align-items: center;
+     text-transform: uppercase;
+     transition: all .5s ease-in-out;
+}
+
+.btn:hover {
+     color: #f9f9f9;
+     background: #0D7AB9;
+}
+
+.btn:hover .arrow {
+     color: #f9f9f9;
+}
+
+.btn .arrow {
+     height: 20px;
+     color: #0D7AB9;
+     margin-left: 10px;
+}
+
+.btn.btn.primary {
+     color: #f9f9f9;
+     background: #0D7AB9;
+}
+
+.btn.primary:hover {
+     color: #0D7AB9;
+     background: transparent;
+}
+/* ON HOVER OF BUTTON, MAKE THE ARROW INSIDE TURN WHITE */
+
+
+ul { 
+     list-style: none;
+}
+
+a {
+     text-decoration: none;
+}

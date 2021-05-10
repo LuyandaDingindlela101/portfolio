@@ -1,0 +1,26 @@
+
+#landing-section {
+     display: flex;
+     padding: 50px 300px;
+     flex-direction: column;
+}
+
+#landing-section div  p {
+     font-size: 24px;
+     color: #96a0a6;
+     font-weight: bold;
+}
+
+#landing-section div h1 {
+     color: #051c2c;
+     font-size: 80px;
+     font-weight: 900;
+}
+
+#landing-section div h1 span {
+     font-size: 120px;
+}
+
+#landing-section div a .btn {
+     font-size: 24px;
+}

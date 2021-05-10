@@ -1,0 +1,82 @@
+#contact-section { 
+     padding: 5% 10%;
+     color: #464633;
+     background: #f9f9f9;
+}
+
+#contact-section .contact-header h2 {
+     font-size: 35px;
+}
+
+#contact-section .contact-header h3 {
+     font-size: 50px;
+     color: #0D7AB9;
+     margin-bottom: 20px;
+}
+
+#contact-section .form-and-details-container {
+     display: flex;
+     justify-content: space-between;
+}
+
+#contact-section .form-and-details-container .contact-details-container {
+     width: 50%;
+}
+
+#contact-section .form-and-details-container .contact-details-heading {
+     font-size: 30px;
+     font-weight: 400;
+     margin-bottom: 35px;
+}
+
+#contact-section .form-and-details-container .contact-details-description {
+     font-size: 17px;
+     font-weight: 400;
+     margin-bottom: 25px;
+}
+
+#contact-section .form-and-details-container .contact-details .detail {
+     display: flex;
+     font-size: 16px;
+     margin-bottom: 30px;
+     align-items: center;
+}
+
+#contact-section .form-and-details-container .contact-details .detail i {
+     font-size: 25px;
+     margin-right: 20px;
+     margin-bottom: 10px;
+}
+
+#contact-section .form-and-details-container .contact-details .detail a {
+     color: #464633;
+}
+
+#contact-section .form-and-details-container .contact-details .social-links {
+     position: static;
+}
+
+#contact-section .form-and-details-container #contact-form {
+     width: 45%;
+     margin-left: 5%;
+}
+
+#contact-section .form-and-details-container #contact-form input,
+#contact-section .form-and-details-container #contact-form textarea {
+     width: 100%;
+     height: 40px;  
+     border: none;
+     padding: 5px;
+     display: block;
+     font-size: 16px;
+     font-weight: 400;
+     border-radius: 0;
+     margin-bottom: 20px;
+     background-color: transparent;
+     border-bottom: 2px solid #0D7AB9;
+}
+
+#contact-section .form-and-details-container #contact-form .btn {
+     width: 100%;
+     border: 2px solid #0D7AB9;
+}
