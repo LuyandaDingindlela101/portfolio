@@ -10,7 +10,7 @@
      <link rel="preconnect" href="https://fonts.gstatic.com">
      <script src="https://kit.fontawesome.com/e94a73a4c7.js" crossorigin="anonymous"></script>
      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     
      <!-- MY STYLESHEETS -->
      <link rel="stylesheet" href="./styles/main.css">
@@ -20,6 +20,8 @@
      <link rel="stylesheet" href="./styles/gallery.css">
      <link rel="stylesheet" href="./styles/socials.css">
      <link rel="stylesheet" href="./styles/contact.css">
+     <link rel="stylesheet" href="./styles/instructions.css">
+     <link rel="stylesheet" href="./styles/resume.css">
      <link rel="shortcut icon" href="./images/fav.png" type="image/x-icon">
 </head>
 <body>
@@ -54,7 +56,7 @@
      <!-- GALLERY SECTION -->
      <section id="gallery-section">
           <div class="gallery-container">
-              <div class="projects-container">
+               <div class="projects-container">
                     <div class="project">
                          <img src="./images/project_3.png" alt="sneaker store image">
                          <h2>MegaOne Shoe Store</h2>
@@ -78,14 +80,95 @@
                               <a href="https://sleepy-heyrovsky-fd76de.netlify.app/" target="_blank" rel="noopener noreferrer"><button class="btn">View online</button></a>
                          </div>
                     </div>
+               </div>
+               <div class="projects-container">
+                    <div class="project">
+                         <img src="./images/project_3.png" alt="sneaker store image">
+                         <h2>MegaOne Shoe Store</h2>
+                         <p>
+                              This contact form challenged my ability to follow a design but also add my own personal touch to it. 
+                              The MegaOne Shoe Store is my favourite project so far. It was built using html , css and javascript.
+                         </p>
+                         <div class="btns-container">
+                              <a href="https://github.com/LuyandaDingindlela101/sneaker-store" target="_blank" rel="noopener noreferrer"><button class="btn primary">View on github</button></a>
+                              <a href="https://fervent-goldberg-630ff0.netlify.app/" target="_blank" rel="noopener noreferrer"><button class="btn">View online</button></a>
+                         </div>
+                    </div>
+                    <div class="project margin-down">
+                         <img src="./images/project_2.png" alt="project 2">
+                         <h2>Neumorphic Timeline Section</h2>
+                         <p>
+                              This is one one of my favourite projects so far. I enjoyed the process of learning how to 
+                              use the AOS library for the animations. Whats next now is learning how to actually write 
+                              the code for those animations
+                         </p>
+                         <div class="btns-container">
+                              <a href="https://github.com/LuyandaDingindlela101/Neumorphic-Timeline" target="_blank" rel="noopener noreferrer"><button class="btn primary">View on github</button></a>
+                              <a href="https://sleepy-heyrovsky-fd76de.netlify.app/" target="_blank" rel="noopener noreferrer"><button class="btn">View online</button></a>
+                         </div>
+                    </div>
               </div>
-              <!--  SET UP THE HORIZONTAL SCROLL AND INCLUDE THE OTHER PROJECTS -->
           </div>
      </section>
 
      <!-- ABOUT ME SECTION -->
      <section id="about-section">
-          <h2 class="cursive">Nice to meet you</h2>
+          <div class="about-container">
+               <div class="img-container">
+                    <img src="./images/profile_img.jpg" alt="Luyanda Dingindlela Profile picture" class="profile-image">
+               </div>
+               <div class="about-details">
+                    <h3>About Me</h3>
+                    <h2 class="cursive">Nice to meet you</h2>
+                    <p>
+                         I am a passionate and hardworking individual. I have a strong creative side and this shows in 
+                         my love of design and drawing. I've recently discovered my adventurous side after hiking, 
+                         now I can't get enough of it.
+                         <br><br>
+                         The reason why I became interested in web design is that I used to draw a lot, so I've always 
+                         been creative. I like web design for the same reason I like drawing namely because you get 
+                         to start with a blank "canvas" and fill it with anything and everything you can think of and 
+                         end up with something amazing, that can be seen by everyone.
+                    </p>
+                    <div class="details-container">
+                         <div class="left-details">
+                              <div class="detail">
+                                   <p>Birthday: 15th March 1999</p>
+                              </div>
+                              <div class="detail">
+                                   <p>Age: level 22</p>
+                              </div>
+                              <div class="detail">
+                                   <p>Residence: South Africa</p>
+                              </div>
+                              <div class="detail">
+                                   <p>Address: Cape Town, South Africa</p>
+                              </div>
+                         </div>
+                         <div class="right-details">
+                              <div class="detail">
+                                   <p>Email: <a href="mailto:LuyandaDingindlela@gmail.com">LuyandaDingindlela@gmail.com</a></p>
+                              </div>
+                              <div class="detail">
+                                   <p>Phone: <a href="tel:+0740285889">074 028 5889</a></p>
+                              </div>
+                              <div class="detail">
+                                   <p>Website: Netlify-link</p>
+                              </div>
+                              <div class="detail">
+                                   <p>Freelance: Available</p>
+                              </div>
+                         </div>
+                    </div>
+                    <a href="#">
+                         <button class="btn">
+                              Download cv
+                              <svg viewBox="0 0 24 24" focusable="false" role="presentation" class="arrow"><path fill="none" stroke-linejoin="bevel" stroke="currentcolor" stroke-width="3" stroke-linecap="square" d="M12 3l9 9-9 9m-9-9h16.714H3z"></path></svg>
+                         </button>
+                    </a>
+               </div>
+          </div>
+          <!-- <h2 class="cursive">Nice to meet you</h2>
           <h3>
                I’m Luyanda Dingindlela, I’m interested in web development and I’m currently learning html, 
                css, javascript and python. This is all started when my previous career path seemed impossible 
@@ -96,9 +179,83 @@
                to create your masterpeice.
                <br><br>
                I'm interested in the entire full-stack spectrum and working on ambitious projects with positive people.
-          </h3>
+          </h3> -->
      </section>
 
+     <!-- RESUME SECTION -->
+     <section id="resume-section">
+          <div class="section-header">
+               <h3>My Resume</h3>
+               <p>
+                    Take a look at my resume, this is just a little preview of where I've been and what I can do. 
+               </p>
+          </div>
+          <div class="resume-container">
+               <div class="left-resume">
+                    <h4>Education</h4>
+                    <div class="education-container">
+                         <div class="resume-item">
+                              <h5>Matric - Certificate</h5>
+                              <h6>2016</h6>
+                              <p>
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ut repellat ipsum 
+                                   sapiente quisquam quibusdam corporis, quasi eaque ea tenetur quidem debitis 
+                                   reprehenderit nisi illo molestias perferendis fuga eum minus!
+                              </p>
+                         </div>
+                         <div class="resume-item">
+                              <h5>Uwc (Future Innovation Programme) - Distinction</h5>
+                              <h6>2019 - 2020</h6>
+                              <p>
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ut repellat ipsum 
+                                   sapiente quisquam quibusdam corporis, quasi eaque ea tenetur quidem debitis 
+                                   reprehenderit nisi illo molestias perferendis fuga eum minus!
+                              </p>
+                         </div>
+                         <div class="resume-item">
+                              <h5>LIfe Choices</h5>
+                              <h6>2021 - Present</h6>
+                              <p>
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ut repellat ipsum 
+                                   sapiente quisquam quibusdam corporis, quasi eaque ea tenetur quidem debitis 
+                                   reprehenderit nisi illo molestias perferendis fuga eum minus!
+                              </p>
+                         </div>
+                    </div>
+               </div>
+               <div class="experience-container">
+                    <h4>Experience</h4>
+                    <div class="resume-items-container">
+                         <div class="resume-item">
+                              <h5>Seasons Find t/a Basic Marketing</h5>
+                              <h6>2017 - 2019</h6>
+                              <p>
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ut repellat ipsum 
+                                   sapiente quisquam quibusdam corporis, quasi eaque ea tenetur quidem debitis 
+                                   reprehenderit nisi illo molestias perferendis fuga eum minus!
+                              </p>
+                         </div>
+                         <div class="resume-item">
+                              <h5>Skills</h5>
+                              <div class="skills-container">
+                                   <div class="skill">
+                                        <h6>Problem Solving</h6>
+                                        <meter class="skill-meter" value="84" min="0" max="100" title="skill-meter"></meter>
+                                   </div>
+                                   <div class="skill">
+                                        <h6>Time Management</h6>
+                                        <meter class="skill-meter" value="70" min="0" max="100" title="skill-meter"></meter>
+                                   </div>
+                                   <div class="skill">
+                                        <h6>Problem Solving</h6>
+                                        <meter class="skill-meter" value="88" min="0" max="100" title="skill-meter"></meter>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
      <!-- CONTACT ME SECTION -->
      <section id="contact-section">
           <div class="contact-header">
@@ -153,7 +310,7 @@
 
      </footer>
 
-     <!-- ADD SOCIAL LINKS  -->
+     <!-- ABSOLUTE SOCIAL LINKS  -->
 	<div class="social-links">
 		<ul>
 			<li><a href="https://github.com/LuyandaDingindlela101" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
@@ -161,6 +318,11 @@
 			<li><a href="https://www.instagram.com/not_luyanda/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
 		</ul>
 	</div>
+
+     <!-- ABSOLUTE "SPACE" INSTRUCTIONS -->
+     <div class="instructions-container">
+          <p>Press <span>space</span> to join us on the dark side.</p>
+     </div>
      <script src="./scripts/script.js"></script>
      <script src="./scripts/fullpage.js"></script>
 </body>

@@ -6,3 +6,5 @@ new fullpage("#fullpage", {
 	navigationTooltips: ["first", "seccond", "third"],
 	center: true,
 });
+
+// FUNCTION TO MAKE THE THEME CHANGE

@@ -1,0 +1,68 @@
+#resume-section {
+    padding: 5% 10%;
+    background: #f9f9f9;
+}
+
+
+/* RESUME CONTAINER */
+#resume-section .resume-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+/* RESUME ITEM */
+#resume-section .education-container .resume-item, 
+#resume-section .experience-container .resume-item {
+    width: 600px;
+    padding: 30px;
+    max-width: 95%;
+    margin-bottom: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 4px solid #0D7AB9;
+    box-shadow:  20px 20px 60px #d4d4d4, -20px -20px 60px #ffffff;
+}
+
+#resume-section .education-container .resume-item h5, 
+#resume-section .experience-container .resume-item h5 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}   
+
+#resume-section .education-container .resume-item h6,
+#resume-section .experience-container .resume-item h6 {
+    font-size: 13px;
+    color: #464633;
+}   
+
+
+/* RESUME SKILL BAR */
+#resume-section .experience-container .resume-item .skills-container .skill {
+    margin-bottom: 15px;
+}
+
+#resume-section .experience-container .resume-item .skills-container .skill h6 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#resume-section .experience-container .resume-item .skills-container .skill .outer-bar {
+    width: 100%;
+    height: 10px;
+    background: rgba(120, 120, 120, 0.5);
+}
+
+#resume-section .experience-container .resume-item .skills-container .skill .skill-meter {
+    appearance: meterbar;
+}
+
+#resume-section .experience-container .resume-item .skills-container .skill .skill-meter::-webkit-meter-bar {
+    width: 100%;
+    height: 10px;
+    background: none;
+    background-color: #0D7AB9;
+    box-shadow: 0 5px 5px -5px #333 inset;
+    background-size: 100% 100%;
+}

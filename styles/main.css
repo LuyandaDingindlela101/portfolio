@@ -5,12 +5,17 @@
 }
 
 body {
-     font-family: 'Noto Sans JP', sans-serif;
+     color: #464633;
+     font-family: 'Poppins', sans-serif;
 }
 
 .cursive {
      color: #0D7AB9;
      font-family: 'Dancing Script', cursive;
+}
+
+p {
+     color: #96a0a6;
 }
 
 .btn {
@@ -48,12 +53,11 @@ body {
      background: #0D7AB9;
 }
 
+/* ON HOVER OF BUTTON, MAKE THE ARROW INSIDE TURN WHITE */
 .btn.primary:hover {
      color: #0D7AB9;
      background: transparent;
 }
-/* ON HOVER OF BUTTON, MAKE THE ARROW INSIDE TURN WHITE */
-
 
 ul { 
      list-style: none;
@@ -61,4 +65,19 @@ ul {
 
 a {
      text-decoration: none;
+}
+
+/* SECTION HEADER */
+.section-header {
+     width: 80%;
+     padding: 5%;
+     max-width: 900px;
+     text-align: center;
+     margin: 0 auto 50px auto;
+}
+
+.section-header h3 {
+     font-size: 30px;
+     margin-bottom: 20px;
+     text-transform: capitalize;
 }

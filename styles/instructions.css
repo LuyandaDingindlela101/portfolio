@@ -1,0 +1,23 @@
+.instructions-container {
+    top: 20px;
+    left: 50px;
+    position: fixed;
+}
+
+.instructions-container p {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.instructions-container span {
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #0D7AB9;
+    transition: all .5s ease-in-out;
+}
+
+.instructions-container span:hover {
+    color: #ffffff;
+    background: #0D7AB9;
+}   
