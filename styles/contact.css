@@ -82,3 +82,20 @@
      color: #ffffff;
      background: #0D7AB9;
 }
+
+
+@media screen and (max-width: 600px) {
+     #contact-section .form-and-details-container {
+          flex-direction: column;
+     }
+     
+     #contact-section .form-and-details-container .contact-details-container, 
+     #contact-section .form-and-details-container #contact-form {
+          width: 100%;
+     }
+
+     #contact-section .form-and-details-container .contact-details-container {
+          margin-bottom: 50px;
+     }
+     
+}

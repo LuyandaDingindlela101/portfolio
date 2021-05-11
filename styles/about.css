@@ -99,3 +99,26 @@
      font-size: 24px;
      margin: 20px auto 0 0;
 }
+
+
+/* MEDIA QUERRIES FOR PHONES BETWEEN 0 - 600PX*/
+@media screen and (max-width: 600px) {
+     #about-section .about-container {
+          flex-direction: column;
+     }
+
+     #about-section .about-container .img-container  {
+          width: 100%;
+          height: 500px;
+          margin-bottom: 50px;
+     }
+
+     #about-section .about-container .about-details {
+          width: 100%;
+     }
+     
+     #about-section .about-container .about-details .details-container {
+          flex-direction: column;
+          align-items: flex-start;
+     }    
+}

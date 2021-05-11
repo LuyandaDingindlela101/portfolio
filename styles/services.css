@@ -56,3 +56,14 @@
     margin-bottom: 15px;
 }
 
+
+/* MEDIA QUERRIES FOR PHONES BETWEEN 0 - 600PX*/
+@media screen and (max-width: 600px) {
+    #services-section .services-container {
+        flex-direction: column;
+    }
+
+    #services-section .services-container .service {
+        width: 100%;
+    }
+}

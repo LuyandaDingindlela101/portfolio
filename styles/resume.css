@@ -148,3 +148,34 @@
     font-size: 50px;
     color: #0D7AB9;
 }
+
+
+/* MEDIA QUERRIES FOR PHONES BETWEEN 0 - 600PX*/
+@media screen and (max-width: 600px) {
+    #resume-section .resume-container {
+        flex-direction: column;
+    }   
+
+    #resume-section .resume-container h4 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }   
+
+    #resume-section .education-container .resume-item, 
+    #resume-section .experience-container .resume-item {
+        width: 100%;
+    }
+
+    #resume-section .education-container, 
+    #resume-section .experience-container {
+        margin-bottom: 50px;
+    }
+
+    #resume-section .tech-stacks .stack-container {
+        flex-direction: column;
+    }
+
+    #resume-section .tech-stacks .stack-container .stack {
+        width: 100%;
+    }
+}

@@ -1,7 +1,6 @@
-
 #landing-section {
      display: flex;
-     padding: 50px 300px;
+     padding: 5% 10%;
      flex-direction: column;
      margin-top: 80px;
 }
@@ -24,4 +23,30 @@
 
 #landing-section div a .btn {
      font-size: 24px;
+}
+
+
+/* MEDIA QUERRIES FOR PHONES BETWEEN 0 - 600PX*/
+@media screen and (max-width: 600px) {
+     #landing-section {
+          height: 80vh;
+          padding-top: 50%;
+     }
+
+     #landing-section div  p {
+          font-size: 20px;
+     }
+
+     #landing-section div h1 {
+          font-size: 40px;
+          margin-bottom: 50px;
+     }
+
+     #landing-section div h1 span {
+          font-size: 70px;
+     }
+
+     #landing-section div a .btn {
+          font-size: 24px;
+     }
 }

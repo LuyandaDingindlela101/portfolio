@@ -1,6 +1,5 @@
 #gallery-section {
      padding: 5% 10%;
-     color: #464633;
      background: #f9f9f9;
 }
 
@@ -59,4 +58,17 @@
 
 .gallery-container .btn-container {
      margin-top: 50px;
+}
+
+
+/* MEDIA QUERRIES FOR PHONES BETWEEN 0 - 600PX*/
+@media screen and (max-width: 600px) {
+     #gallery-section .gallery-container .projects-container {
+          flex-direction: column;
+     }
+
+     .gallery-container .projects-container .project {
+          width: 100%;
+          margin: 20px auto;
+     }
 }

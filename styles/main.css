@@ -81,3 +81,11 @@ a {
      margin-bottom: 20px;
      text-transform: capitalize;
 }
+
+/* MEDIA QUERRIES FOR PHONES BETWEEN 0 - 600PX*/
+@media screen and (max-width: 600px) {
+     .section-header {
+          width: 100%;
+     }
+
+}
