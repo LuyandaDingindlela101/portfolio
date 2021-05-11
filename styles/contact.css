@@ -1,7 +1,5 @@
 #contact-section { 
      padding: 5% 10%;
-     color: #464633;
-     background: #f9f9f9;
 }
 
 #contact-section .contact-header h2 {
@@ -58,7 +56,9 @@
 
 #contact-section .form-and-details-container #contact-form {
      width: 45%;
-     margin-left: 5%;
+     padding: 2.5%;
+     background: linear-gradient(145deg, #ffffff, #e6e6e6);
+     box-shadow:  20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
 }
 
 #contact-section .form-and-details-container #contact-form input,
@@ -78,5 +78,7 @@
 
 #contact-section .form-and-details-container #contact-form .btn {
      width: 100%;
-     border: 2px solid #0D7AB9;
+     display: block;
+     color: #ffffff;
+     background: #0D7AB9;
 }

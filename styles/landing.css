@@ -3,6 +3,7 @@
      display: flex;
      padding: 50px 300px;
      flex-direction: column;
+     margin-top: 80px;
 }
 
 #landing-section div  p {

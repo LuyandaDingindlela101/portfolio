@@ -3,6 +3,10 @@
     background: #f9f9f9;
 }
 
+#resume-section .section-header .cursive {
+    font-size: 50px; 
+}
+
 
 /* RESUME CONTAINER */
 #resume-section .resume-container {
@@ -48,21 +52,99 @@
     font-weight: 600;
 }
 
+/* RESUME SKILL OUTER BAR */
 #resume-section .experience-container .resume-item .skills-container .skill .outer-bar {
     width: 100%;
     height: 10px;
     background: rgba(120, 120, 120, 0.5);
 }
 
-#resume-section .experience-container .resume-item .skills-container .skill .skill-meter {
-    appearance: meterbar;
+/* RESUME SKILL INNER BAR */
+#resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar {
+    height: 100%;
+    background: #0D7AB9;
 }
 
-#resume-section .experience-container .resume-item .skills-container .skill .skill-meter::-webkit-meter-bar {
-    width: 100%;
-    height: 10px;
-    background: none;
-    background-color: #0D7AB9;
-    box-shadow: 0 5px 5px -5px #333 inset;
-    background-size: 100% 100%;
+/* PROBLEM SOLVING BAR */
+#resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-1 {
+    width: 84%;
+    position: relative;
+}
+
+#resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-1::after {
+    top: -10px;
+    right: -20px;
+    content: '84%';
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+/* TIME MANAGEMENT */
+#resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-2 {
+    width: 71%;
+    position: relative;
+}
+
+#resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-2::after {
+    top: -10px;
+    right: -20px;
+    content: '71%';
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+/*  */
+#resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-3 {
+    width: 88%;
+    position: relative;
+}
+
+#resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-3::after {
+    top: -10px;
+    right: -20px;
+    content: '88%';
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+#resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-4 {
+    width: 90%;
+    position: relative;
+}
+
+#resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-4::after {
+    top: -10px;
+    right: -20px;
+    content: '90%';
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+
+/* TECH STACK SECTION */
+#resume-section .tech-stacks .stack-container {
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#resume-section .tech-stacks .stack-container .stack {
+    width: 80%;
+    padding: 30px;
+    max-width: 350px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+
+#resume-section .tech-stacks .stack-container .stack p {
+    opacity: .5;
+    font-size: 25px;
+}
+
+#resume-section .tech-stacks .stack-container .stack h6 {
+    font-size: 50px;
+    color: #0D7AB9;
 }
