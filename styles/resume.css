@@ -1,11 +1,24 @@
 #resume-section {
     padding: 5% 10%;
-    background: #f9f9f9;
+    background: var(--primary-bg-color);
 }
 
 #resume-section .section-header .cursive {
     font-size: 50px; 
 }
+
+
+#resume-section .education-container, 
+#resume-section .experience-container {
+    width: 50%;
+}
+
+#resume-section .education-container h4, 
+#resume-section .experience-container h4 {
+    font-size: 25px;
+}
+
+
 
 
 /* RESUME CONTAINER */
@@ -25,8 +38,8 @@
     margin-bottom: 20px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    border-left: 4px solid #0D7AB9;
-    box-shadow:  20px 20px 60px #d4d4d4, -20px -20px 60px #ffffff;
+    border-left: 4px solid var(--primary-color);
+    box-shadow:  20px 20px 60px #d4d4d4, -20px -20px 60px var(--secondary-bg-color);
 }
 
 #resume-section .education-container .resume-item h5, 
@@ -38,7 +51,7 @@
 #resume-section .education-container .resume-item h6,
 #resume-section .experience-container .resume-item h6 {
     font-size: 13px;
-    color: #464633;
+    color: var(--primary-text-color);
 }   
 
 
@@ -62,7 +75,7 @@
 /* RESUME SKILL INNER BAR */
 #resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar {
     height: 100%;
-    background: #0D7AB9;
+    background: var(--primary-color);
 }
 
 /* PROBLEM SOLVING BAR */
@@ -124,6 +137,7 @@
 /* TECH STACK SECTION */
 #resume-section .tech-stacks .stack-container {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 100px;
     align-items: center;
     justify-content: space-between;
@@ -135,8 +149,8 @@
     max-width: 350px;
     border-radius: 10px;
     margin-bottom: 30px;
-    background: #ffffff;
-    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+    background: var(--secondary-bg-color);
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px var(--secondary-bg-color);
 }
 
 #resume-section .tech-stacks .stack-container .stack p {
@@ -146,12 +160,21 @@
 
 #resume-section .tech-stacks .stack-container .stack h6 {
     font-size: 50px;
-    color: #0D7AB9;
+    color: var(--primary-color);
 }
 
 
-/* MEDIA QUERRIES FOR PHONES BETWEEN 0 - 600PX*/
-@media screen and (max-width: 600px) {
+/* MEDIA QUERRIES FOR PHONES BETWEEN 0 - 800PX*/
+@media screen and (max-width: 900px) {
+    #resume-section { 
+        padding: 10%;
+    }
+
+    #resume-section .education-container, 
+    #resume-section .experience-container {
+        width: 100%;
+    }
+
     #resume-section .resume-container {
         flex-direction: column;
     }   
@@ -164,6 +187,7 @@
     #resume-section .education-container .resume-item, 
     #resume-section .experience-container .resume-item {
         width: 100%;
+        max-width: 100%;
     }
 
     #resume-section .education-container, 
@@ -178,4 +202,17 @@
     #resume-section .tech-stacks .stack-container .stack {
         width: 100%;
     }
+
+    #resume-section .tech-stacks .stack-container {
+        justify-content: center;
+    }
+    
+}
+
+
+/* MEDIA QUERRY FOR SCREENS BETWEEN 600PX TO 1200PX */
+@media only screen and (max-width: 1200px) and (min-width: 600px)  {
+    #resume-section .resume-container h4 {
+        /* text-align: center; */
+    }   
 }

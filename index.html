@@ -6,6 +6,7 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!-- 3RD PARTY LINKS -->
+     <script src="./scripts/particles.js"></script>
      <link rel="stylesheet" href="./styles/fullpage.css">
      <link rel="preconnect" href="https://fonts.gstatic.com">
      <link rel="stylesheet" href="./styles/owl.carousel.min.css">
@@ -27,6 +28,7 @@
      <link rel="stylesheet" href="./styles/services.css">
      <link rel="stylesheet" href="./styles/testimonial.css">
      <link rel="stylesheet" href="./styles/footer.css">
+     <link rel="stylesheet" href="./styles/land.css">
      <link rel="shortcut icon" href="./images/fav.png" type="image/x-icon">
 </head>
 <body>
@@ -36,18 +38,18 @@
           <nav class="nav-menu">
                <ul class="nav-list">
                     <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#gallery-section">What Do I've Done</a></li>
                     <li class="nav-item"><a href="#about-section">Who Am I</a></li>
                     <li class="nav-item"><a href="#services-section">What Do I Do</a></li>
-                    <li class="nav-item"><a href="#gallery-section">What Do I've Done</a></li>
                     <li class="nav-item"><a href="#contact-section">Talk To Me</a></li>
                </ul>
-               <button class="nav-button" onclick="toggleMenu()">Open</button>
+               <button class="nav-button" onclick="toggleMenu()">+</button>
           </nav>
      </div>
 
      <!-- LANDING SECTION -->
-     <section id="landing-section">
-          <div>
+     <div id="landing-section">
+          <div class="landing-content">
                <p>Hi, I'm <span>Luyanda</span></p>
                <h1>I make <span class="cursive">awesome</span> <br> happen</h1>
                <a href="mailto:LuyandaDingindlela@gmail.com">
@@ -57,7 +59,7 @@
                     </button>
                </a>
           </div>  
-     </section>
+     </div>
 
      <!-- GALLERY SECTION -->
      <section id="gallery-section">
@@ -184,36 +186,34 @@
                </p>
           </div>
           <div class="resume-container">
-               <div class="left-resume">
+               <div class="education-container">
                     <h4>Education</h4>
-                    <div class="education-container">
-                         <div class="resume-item">
-                              <h5>Matric - Certificate</h5>
-                              <h6>2016</h6>
-                              <p>
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ut repellat ipsum 
-                                   sapiente quisquam quibusdam corporis, quasi eaque ea tenetur quidem debitis 
-                                   reprehenderit nisi illo molestias perferendis fuga eum minus!
-                              </p>
-                         </div>
-                         <div class="resume-item">
-                              <h5>UWC (Future Innovation Programme) - Distinction</h5>
-                              <h6>2019 - 2020</h6>
-                              <p>
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ut repellat ipsum 
-                                   sapiente quisquam quibusdam corporis, quasi eaque ea tenetur quidem debitis 
-                                   reprehenderit nisi illo molestias perferendis fuga eum minus!
-                              </p>
-                         </div>
-                         <div class="resume-item">
-                              <h5>LIfe Choices</h5>
-                              <h6>2021 - Present</h6>
-                              <p>
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ut repellat ipsum 
-                                   sapiente quisquam quibusdam corporis, quasi eaque ea tenetur quidem debitis 
-                                   reprehenderit nisi illo molestias perferendis fuga eum minus!
-                              </p>
-                         </div>
+                    <div class="resume-item">
+                         <h5>Matric - Certificate</h5>
+                         <h6>2016</h6>
+                         <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ut repellat ipsum 
+                              sapiente quisquam quibusdam corporis, quasi eaque ea tenetur quidem debitis 
+                              reprehenderit nisi illo molestias perferendis fuga eum minus!
+                         </p>
+                    </div>
+                    <div class="resume-item">
+                         <h5>UWC (Future Innovation Programme) - Distinction</h5>
+                         <h6>2019 - 2020</h6>
+                         <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ut repellat ipsum 
+                              sapiente quisquam quibusdam corporis, quasi eaque ea tenetur quidem debitis 
+                              reprehenderit nisi illo molestias perferendis fuga eum minus!
+                         </p>
+                    </div>
+                    <div class="resume-item">
+                         <h5>LIfe Choices</h5>
+                         <h6>2021 - Present</h6>
+                         <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ut repellat ipsum 
+                              sapiente quisquam quibusdam corporis, quasi eaque ea tenetur quidem debitis 
+                              reprehenderit nisi illo molestias perferendis fuga eum minus!
+                         </p>
                     </div>
                </div>
                <div class="experience-container">
@@ -325,38 +325,52 @@
           </div>
           <div class="testimonials-container">
                <div class="owl-carousel">
-                    <div class="testimonials">
-                         <div class="testimonial">
-                              <div class="testimonial-header">
-                                   <div class="testimonial-image">
-                                        <img src="./images/profile_img.jpeg" alt="">
-                                   </div>
-                                   <div class="testimonial-authour">
-                                        <h5>Bruce Wayne</h5>
-                                        <h6>CEO Of Wayne Enterprices</h6>
-                                   </div>
+                    <div class="testimonial">
+                         <div class="testimonial-header">
+                              <div class="testimonial-image">
+                                   <img src="./images/godwin.jpg" alt="Godwin Dzvapatsva image">
                               </div>
-                              <div class="testimonial-body">
-                                   <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quis voluptatem suscipit, libero optio unde quod. Id accusantium cupiditate quibusdam rerum tempora asperiores aut perferendis, expedita, dolore blanditiis distinctio sequi?
-                                   </p>
+                              <div class="testimonial-authour">
+                                   <h5>Godwin Dzvapatsva</h5>
+                                   <h6>Head of Curriculum and Learning</h6>
                               </div>
                          </div>
-                         <div class="testimonial">
-                              <div class="testimonial-header">
-                                   <div class="testimonial-image">
-                                        <img src="./images/profile_img.jpeg" alt="">
-                                   </div>
-                                   <div class="testimonial-authour">
-                                        <h5>Bruce Wayne</h5>
-                                        <h6>CEO Of Wayne Enterprices</h6>
-                                   </div>
+                         <div class="testimonial-body">
+                              <p>
+                                   Luyanda has proved to be an exceptional student so far in the projects that have been done in class. His attention to detail or project brief makes me recommend him without hesitation
+                              </p>
+                         </div>
+                    </div>
+                    <div class="testimonial">
+                         <div class="testimonial-header">
+                              <div class="testimonial-image">
+                                   <img src="./images/profile_img.jpeg" alt="">
                               </div>
-                              <div class="testimonial-body">
-                                   <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quis voluptatem suscipit, libero optio unde quod. Id accusantium cupiditate quibusdam rerum tempora asperiores aut perferendis, expedita, dolore blanditiis distinctio sequi?
-                                   </p>
+                              <div class="testimonial-authour">
+                                   <h5>Godwin Dzvapatsva</h5>
+                                   <h6>Head of Curriculum and Learning</h6>
                               </div>
+                         </div>
+                         <div class="testimonial-body">
+                              <p>
+                                   Luyanda has proved to be an exceptional student so far in the projects that have been done in class. His attention to detail or project brief makes me recommend him without hesitation
+                              </p>
+                         </div>
+                    </div>
+                    <div class="testimonial">
+                         <div class="testimonial-header">
+                              <div class="testimonial-image">
+                                   <img src="./images/profile_img.jpeg" alt="">
+                              </div>
+                              <div class="testimonial-authour">
+                                   <h5>Godwin Dzvapatsva</h5>
+                                   <h6>Head of Curriculum and Learning</h6>
+                              </div>
+                         </div>
+                         <div class="testimonial-body">
+                              <p>
+                                   Luyanda has proved to be an exceptional student so far in the projects that have been done in class. His attention to detail or project brief makes me recommend him without hesitation
+                              </p>
                          </div>
                     </div>
                </div>
@@ -408,43 +422,51 @@
      </section>
 
      <!-- FOOTER SECTION -->
-     <!-- <footer class="footer">
+     <footer class="footer">
           <div class="design">
-               <p>Designed and developed by Luyanda Dingindela</p>
+               <p>Designed and developed by <b>Luyanda Dingindela</b></p>
           </div>
           <div class="copyright">
                <p>Copyright © 2020. All Rights Reserved</p>
           </div>
-     </footer> -->
+     </footer>
 
      <!-- ABSOLUTE SOCIAL LINKS  -->
-	<!-- <div class="social-links">
+	<div class="social-links">
 		<ul>
 			<li><a href="https://github.com/LuyandaDingindlela101" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
 			<li><a href="https://www.facebook.com/notLuyanda" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
 			<li><a href="https://www.instagram.com/not_luyanda/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
 		</ul>
-	</div> -->
+	</div>
 
      <!-- ABSOLUTE "SPACE" INSTRUCTIONS -->
-     <!-- <div class="instructions-container">
+     <div class="instructions-container">
           <p>Press <span>space</span> to join us on the dark side.</p>
-     </div> -->
+     </div>
+
+
 
      <!-- 3RD PARTY SCRIPTS -->
      <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
      <script>
-     $(document).ready(function () {
-          $(".owl-carousel").owlCarousel({
-          items: 1,
-          margin: 50,
-          loop: true,
-          stagePadding: 100,
-          dots: false,
-          autoplay: true,
+          $(document).ready(function () {
+               /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+               particlesJS.load('landing-section', './scripts/particle_config.json');
+
+
+
+               $(".owl-carousel").owlCarousel({
+               items: 1,
+               margin: 100,
+               loop: true,
+               stagePadding: 100,
+               dots: true,
+               // nav: true,
+               autoplay: true,
+               });
           });
-     });
      </script>
      
      <!-- MY SCRIPTS -->

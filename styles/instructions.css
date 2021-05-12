@@ -13,11 +13,11 @@
     padding: 5px;
     cursor: pointer;
     border-radius: 5px;
-    border: 2px solid #0D7AB9;
     transition: all .5s ease-in-out;
+    border: 2px solid var(--primary-color);
 }
 
 .instructions-container span:hover {
-    color: #ffffff;
-    background: #0D7AB9;
+    color: var(--secondary-bg-color);
+    background: var(--primary-color);
 }   

@@ -1,28 +1,50 @@
+/* LIGHT MODE STYLES */
+:root {
+     --primary-bg-color: #f9f9f9;
+     --secondary-bg-color: #ffffff;
+
+     --primary-text-color: #464633;
+     --secondary-text-color: #96a0a6;
+
+     --primary-color: #0D7AB9;
+}
+
+/* DARK MODE STYLES */
+.dark-mode {
+     --primary-bg-color: #18182f;
+     --secondary-bg-color: #ffffff;
+
+     --primary-text-color: #464633;
+     --secondary-text-color: #96a0a6;
+
+     --primary-color: #0D7AB9;
+}
 * {
      margin: 0;
      padding: 0;
      box-sizing: border-box;
+     scroll-behavior: smooth;
 }
 
 body {
-     color: #464633;
+     color: var(--primary-text-color);
      font-family: 'Poppins', sans-serif;
 }
 
 .cursive {
-     color: #0D7AB9;
+     color: var(--primary-color);
      font-family: 'Dancing Script', cursive;
 }
 
 p {
-     color: #96a0a6;
+     color: var(--secondary-text-color);
 }
 
 .btn {
      border: none;
      display: flex;
      font-weight: 600;
-     color: #0D7AB9;
+     color: var(--primary-color);
      background: none;
      margin-left: auto;
      padding: 15px 20px;
@@ -34,28 +56,28 @@ p {
 }
 
 .btn:hover {
-     color: #f9f9f9;
-     background: #0D7AB9;
+     color: var(--primary-bg-color);
+     background: var(--primary-color);
 }
 
 .btn:hover .arrow {
-     color: #f9f9f9;
+     color: var(--primary-bg-color);
 }
 
 .btn .arrow {
      height: 20px;
-     color: #0D7AB9;
+     color: var(--primary-color);
      margin-left: 10px;
 }
 
 .btn.btn.primary {
-     color: #f9f9f9;
-     background: #0D7AB9;
+     color: var(--primary-bg-color);
+     background: var(--primary-color);
 }
 
 /* ON HOVER OF BUTTON, MAKE THE ARROW INSIDE TURN WHITE */
 .btn.primary:hover {
-     color: #0D7AB9;
+     color: var(--primary-color);
      background: transparent;
 }
 

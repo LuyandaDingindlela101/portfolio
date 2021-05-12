@@ -10,6 +10,7 @@
 /* SERVICE CONTAINER */
 #services-section .services-container {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
 }
@@ -19,10 +20,10 @@
     width: 80%;
     padding: 30px;
     max-width: 400px;
+    margin: 15px auto;
     border-radius: 10px;
-    margin-bottom: 30px;
-    background: #ffffff;
-    box-shadow:  20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+    background: var(--secondary-bg-color);
+    box-shadow:  20px 20px 60px #d9d9d9, -20px -20px 60px var(--secondary-bg-color);
 }
 
 #services-section .services-container .service .service-header {
@@ -37,12 +38,12 @@
     width: 70px;
     height: 70px;
     font-size: 25px;
-    color: #0D7AB9;
     line-height: 60px;
     border-radius: 50%;
     text-align: center;
     transition: all 0.5s;
     display: inline-block;
+    color: var(--primary-color);
     text-shadow: 1px 1px 1px white;
     box-shadow: inset -3px -3px 8px rgb(255 255 255 / 95%), inset 3px 3px 8px rgb(0 0 0 / 10%);
 }
@@ -59,8 +60,12 @@
 
 /* MEDIA QUERRIES FOR PHONES BETWEEN 0 - 600PX*/
 @media screen and (max-width: 600px) {
+    #services-section { 
+        padding: 10%;
+   }
     #services-section .services-container {
         flex-direction: column;
+        justify-content: center;
     }
 
     #services-section .services-container .service {

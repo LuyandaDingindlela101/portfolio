@@ -22,14 +22,14 @@
 }
  
 .social-links ul li a {
-     color: #464633;
      transition: all .5s ease-in-out;
+     color: var(--primary-text-color);
 }
  
 .social-links ul li:hover {
-     background: #0D7AB9;
+     background: var(--primary-color);
 }
  
 .social-links ul li:hover a {
-     color: #ffffff;
+     color: var(--secondary-bg-color);
 }

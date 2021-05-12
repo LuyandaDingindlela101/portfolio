@@ -1,6 +1,6 @@
 #gallery-section {
      padding: 5% 10%;
-     background: #f9f9f9;
+     background: var(--primary-bg-color);
 }
 
 #gallery-section .gallery-container .projects-container {
@@ -11,9 +11,11 @@
 
 .gallery-container .projects-container .project {
      width: 45%;
+     margin: auto;
      padding: 10px;
+     max-width: 500px;
      border-radius: 10px;
-     box-shadow:  20px 20px 60px #d4d4d4, -20px -20px 60px #f9f9f9;
+     box-shadow:  20px 20px 60px #d4d4d4, -20px -20px 60px var(--primary-bg-color);
 }
 
 .gallery-container .project.margin-down {
@@ -42,17 +44,17 @@
      margin: 20px 0;
      font-size: 15x;
      font-weight: 500;
-     border: 2px solid #0D7AB9;
+     border: 2px solid var(--primary-color);
      transition: all .5s ease-in-out;
 }
 
 .gallery-container .btns-container .btn.primary {
-     color: #f9f9f9;
-     background: #0D7AB9;
+     color: var(--primary-bg-color);
+     background: var(--primary-color);
 }
 
 .gallery-container .btns-container .btn.primary:hover {
-     color: #0D7AB9;
+     color: var(--primary-color);
      background: transparent;
 }
 
@@ -61,8 +63,12 @@
 }
 
 
-/* MEDIA QUERRIES FOR PHONES BETWEEN 0 - 600PX*/
-@media screen and (max-width: 600px) {
+/* MEDIA QUERRIES FOR PHONES BETWEEN 0 - 1100PX*/
+@media screen and (max-width: 1100px) {
+     #gallery-section { 
+          padding: 10%;
+     }
+
      #gallery-section .gallery-container .projects-container {
           flex-direction: column;
      }
