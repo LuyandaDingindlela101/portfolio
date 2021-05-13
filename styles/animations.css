@@ -31,7 +31,7 @@
 }
 
 
-/* HELP BAR */animation: skill-1-fill 3s ease-in-out;
+/* HELP BAR */  
 @keyframes skill-4-fill {
     0% {
         width: 0;
@@ -39,4 +39,18 @@
     100% {
         width: 90%;
     }
+}
+
+
+/* SPACE BUTTON BACKGROUND */
+@keyframes bg-pop {
+    0% {
+        color: var(--primary-text-color);
+        background: var(--primary-color);
+    }
+    100% {
+        color: var(--primary-color);
+        background: var(--primary-text-color);
+    }
+
 }

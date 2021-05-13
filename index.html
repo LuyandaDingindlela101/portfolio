@@ -63,7 +63,7 @@
 
      <!-- GALLERY SECTION -->
      <section id="gallery-section">
-          <div class="gallery-container">
+          <div class="gallery-container container">
                <div class="section-header">
                     <h3 class="cursive">What I've Done</h3>
                </div>
@@ -130,7 +130,7 @@
 
      <!-- ABOUT ME SECTION -->
      <section id="about-section">
-          <div class="about-container">
+          <div class="about-container container">
                <div class="img-container">
                     <img src="./images/profile_img.jpeg" alt="Luyanda Dingindlela Profile picture" class="profile-image">
                </div>
@@ -170,14 +170,14 @@
                                    <p>Phone: <a href="tel:+0740285889">074 028 5889</a></p>
                               </div>
                               <div class="detail">
-                                   <p>Website: Netlify-link</p>
+                                   <p>Website: <a href="https://luyanda-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer">luyanda-portfolio.netlify.app/</a></p>
                               </div>
                               <div class="detail">
                                    <p>Freelance: Available</p>
                               </div>
                          </div>
                     </div>
-                    <a href="#">
+                    <a href="#" download="./documents\Luyanda's Resume.pdf">
                          <button class="btn">
                               Download cv
                               <svg viewBox="0 0 24 24" focusable="false" role="presentation" class="arrow"><path fill="none" stroke-linejoin="bevel" stroke="currentcolor" stroke-width="3" stroke-linecap="square" d="M12 3l9 9-9 9m-9-9h16.714H3z"></path></svg>
@@ -239,7 +239,7 @@
                          </div>
                          <div class="resume-item">
                               <h5>Skills</h5>
-                              <div class="skills-container">
+                              <div class="skills-container" id="basic-waypoint">
                                    <div class="skill">
                                         <h6>Problem Solving</h6>
                                         <div class="outer-bar">
@@ -328,9 +328,6 @@
      <section id="testimonials-section">
           <div class="section-header">
                <h3 class="cursive">See What People Have To Say</h3>
-               <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, deserunt recusandae! Lorem impossible
-               </p>
           </div>
           <div class="testimonials-container">
                <div class="owl-carousel">
@@ -353,32 +350,16 @@
                     <div class="testimonial">
                          <div class="testimonial-header">
                               <div class="testimonial-image">
-                                   <img src="./images/profile_img.jpeg" alt="">
+                                   <img src="./images/Jason.jpg" alt="Jason Wandrag">
                               </div>
                               <div class="testimonial-authour">
-                                   <h5>Godwin Dzvapatsva</h5>
-                                   <h6>Head of Curriculum and Learning</h6>
+                                   <h5>Jason Wandrag</h5>
+                                   <h6>Front End Lecturer</h6>
                               </div>
                          </div>
                          <div class="testimonial-body">
                               <p>
-                                   Luyanda has proved to be an exceptional student so far in the projects that have been done in class. His attention to detail or project brief makes me recommend him without hesitation
-                              </p>
-                         </div>
-                    </div>
-                    <div class="testimonial">
-                         <div class="testimonial-header">
-                              <div class="testimonial-image">
-                                   <img src="./images/profile_img.jpeg" alt="">
-                              </div>
-                              <div class="testimonial-authour">
-                                   <h5>Godwin Dzvapatsva</h5>
-                                   <h6>Head of Curriculum and Learning</h6>
-                              </div>
-                         </div>
-                         <div class="testimonial-body">
-                              <p>
-                                   Luyanda has proved to be an exceptional student so far in the projects that have been done in class. His attention to detail or project brief makes me recommend him without hesitation
+                                   Luyanda has shown a natural talent for development and has quickly become a leader among his peers, both for his intellect, as well as his character.
                               </p>
                          </div>
                     </div>
@@ -466,9 +447,15 @@
                     items: 1,
                     margin: 100,
                     loop: true,
-                    stagePadding: 100,
+                    stagePadding: 0,
                     dots: true,
-                    autoplay: true,     
+                    autoplay: true,
+                    responsiveClass:true,
+                    responsive:{
+                         0:{
+                              items:1,
+                         }
+                    }
                });
           });
      </script>

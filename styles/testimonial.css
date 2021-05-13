@@ -46,6 +46,7 @@
 #testimonials-section .testimonial .testimonial-header .testimonial-authour h5 {
     font-size: 22px;
     font-weight: 500;
+    color: var(--primary-text-color);
 }
 
 #testimonials-section .testimonial .testimonial-header .testimonial-authour h6 {

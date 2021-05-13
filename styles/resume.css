@@ -89,7 +89,7 @@
 #resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-1 {
     width: 84%;
     position: relative;
-    animation: skill-1-fill 3s ease-in-out;
+    
 }
 
 #resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-1::after {
@@ -157,7 +157,7 @@
 #resume-section .tech-stacks .stack-container .stack {
     width: 80%;
     padding: 30px;
-    max-width: 350px;
+    max-width: 250px;
     border-radius: 10px;
     margin-bottom: 30px;
     background: var(--primary-bg-color);
@@ -170,7 +170,7 @@
 }
 
 #resume-section .tech-stacks .stack-container .stack h6 {
-    font-size: 50px;
+    font-size: 40px;
     color: var(--primary-color);
 }
 

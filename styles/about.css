@@ -30,6 +30,10 @@
      border-radius: 5px;
 }
 
+#about-section .about-container img:hover {
+     transform: scale(1);
+}
+
 
 /* ABOUT DETAILS */
 #about-section .about-container .about-details {

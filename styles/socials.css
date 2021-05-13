@@ -1,6 +1,7 @@
 .social-links {
      top: 50%;
      right: 0;
+     display: block;
      position: fixed;
      transform: rotate(90deg) translate(-50%, 0px);
 }
@@ -35,3 +36,9 @@
 .social-links ul li:hover a {
      color: var(--secondary-bg-color);
 }
+
+@media screen and (max-width: 600px) {
+     .social-links {
+         display: none;
+     }
+ }
