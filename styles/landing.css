@@ -1,6 +1,7 @@
 #landing-section {
      padding: 5% 10%;
      position: relative;
+     background: var(--secondary-bg-color);
 }
  
 #landing-section .landing-content {
@@ -17,18 +18,18 @@
  
 #landing-section .landing-content h1 {
      font-size: 80px;
-     color: #051c2c;
      font-weight: 900;
+     color: var(--primary-text-color);
 }
  
 #landing-section .landing-content h1 span {
      font-size: 120px;
 }
- 
+
 #landing-section .landing-content a .btn {
      font-size: 24px;
 }
- 
+
  
 /* MEDIA QUERRIES FOR PHONES BETWEEN 0 - 600PX*/
 @media screen and (max-width: 600px) {

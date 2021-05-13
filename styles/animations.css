@@ -1,0 +1,42 @@
+/* PROBLEM SOLVING BAR */
+@keyframes skill-1-fill {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 84%;
+    }
+}
+
+
+/* CURIOSITY BAR */
+@keyframes skill-2-fill {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 71%;
+    }
+}
+
+
+/* CREATIITY BAR */
+@keyframes skill-3-fill {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 88%;
+    }
+}
+
+
+/* HELP BAR */animation: skill-1-fill 3s ease-in-out;
+@keyframes skill-4-fill {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}

@@ -3,6 +3,10 @@
      background: var(--primary-bg-color);
 }
 
+#gallery-section .section-header .cursive {
+     font-size: 50px;
+}
+
 #gallery-section .gallery-container .projects-container {
      display: flex;
      align-items: flex-start;

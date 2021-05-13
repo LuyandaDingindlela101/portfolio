@@ -22,6 +22,10 @@
      width: 50%;
 }
 
+#contact-section .form-and-details-container .contact-details .social-links{
+     transform: rotate(0);
+}
+
 #contact-section .form-and-details-container .contact-details-heading {
      font-size: 30px;
      font-weight: 400;

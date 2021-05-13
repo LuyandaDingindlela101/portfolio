@@ -20,7 +20,7 @@
      padding: 0;
      box-sizing: border-box;
      scroll-behavior: smooth;
-     transition: all 1s linear;
+     transition: all .5s linear;
 }
 
 body {
@@ -105,9 +105,9 @@ a {
 .section-header {
      width: 80%;
      padding: 5%;
+     margin: 0 auto;
      max-width: 900px;
      text-align: center;
-     margin: 0 auto 50px auto;
 }
 
 .section-header h3 {

@@ -16,6 +16,7 @@
 #resume-section .education-container h4, 
 #resume-section .experience-container h4 {
     font-size: 25px;
+    margin-bottom: 20px;
 }
 
 
@@ -46,7 +47,13 @@
 #resume-section .experience-container .resume-item h5 {
     font-size: 20px;
     margin-bottom: 20px;
-}   
+}  
+
+#resume-section .education-container .resume-item a, 
+#resume-section .experience-container .resume-item a {
+    font-weight: 500;
+    color: var(--primary-color);
+}  
 
 #resume-section .education-container .resume-item h6,
 #resume-section .experience-container .resume-item h6 {
@@ -82,6 +89,7 @@
 #resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-1 {
     width: 84%;
     position: relative;
+    animation: skill-1-fill 3s ease-in-out;
 }
 
 #resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-1::after {
@@ -96,6 +104,7 @@
 #resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-2 {
     width: 71%;
     position: relative;
+    animation: skill-2-fill 3s ease-in-out;
 }
 
 #resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-2::after {
@@ -110,6 +119,7 @@
 #resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-3 {
     width: 88%;
     position: relative;
+    animation: skill-3-fill 3s ease-in-out;
 }
 
 #resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-3::after {
@@ -123,6 +133,7 @@
 #resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-4 {
     width: 90%;
     position: relative;
+    animation: skill-4-fill 3s ease-in-out;
 }
 
 #resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-4::after {
