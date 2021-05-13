@@ -3,14 +3,13 @@
      top: 0;
      width: 100%;
      z-index: 10;
-     height: 200px;
      display: flex;
-     padding: 5% 10%;
+     padding: 2% 10%;
      position: fixed;
      align-items: center;
      justify-content: space-between;
      background: var(--secondary-bg-color);
-     box-shadow:  20px 20px 60px #d9d9d9, -20px -20px 60px var(--secondary-bg-color);
+     box-shadow:  var(--secondary-box-shadow)
 }
 
 .header .logo {
@@ -25,9 +24,9 @@
 .nav-menu .nav-list .nav-item a {
      padding: 0 50px;
      font-size: 16px;
-     color: var(--secondary-text-color);
      font-weight: 600;
      white-space: nowrap;
+     color: var(--secondary-text-color);
 }
 
 .nav-menu .nav-list .nav-item a:hover {

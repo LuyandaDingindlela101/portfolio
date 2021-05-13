@@ -28,7 +28,6 @@
      <link rel="stylesheet" href="./styles/services.css">
      <link rel="stylesheet" href="./styles/testimonial.css">
      <link rel="stylesheet" href="./styles/footer.css">
-     <link rel="stylesheet" href="./styles/land.css">
      <link rel="shortcut icon" href="./images/fav.png" type="image/x-icon">
 </head>
 <body>
@@ -66,7 +65,9 @@
           <div class="gallery-container">
                <div class="projects-container">
                     <div class="project">
-                         <img src="./images/project_3.png" alt="sneaker store image">
+                         <div class="img-container">
+                              <img src="./images/project_3.png" alt="sneaker store image">
+                         </div>
                          <h2>MegaOne Shoe Store</h2>
                          <p>
                               This contact form challenged my ability to follow a design but also add my own personal touch to it. 
@@ -78,7 +79,9 @@
                          </div>
                     </div>
                     <div class="project margin-down">
-                         <img src="./images/project_4.png" alt="project 4">
+                         <div class="img-container">
+                              <img src="./images/project_4.png" alt="project 4">
+                         </div>
                          <h2>Neumorphic Timeline Section</h2>
                          <p>
                               This is one one of my favourite projects so far. I enjoyed the process of learning how to use the AOS library for the animations. Whats next now is learning how to actually write the code for those animations
@@ -91,7 +94,9 @@
                </div>
                <div class="projects-container">
                     <div class="project">
-                         <img src="./images/project_1.png" alt="Neumorphic Testimonial Slider image">
+                         <div class="img-container">
+                              <img src="./images/project_1.png" alt="Neumorphic Testimonial Slider image">
+                         </div>
                          <h2>Neumorphic Testimonial Slider</h2>
                          <p>
                               The owl carousel is another fun library that i definitely do recommend to anyone looking to make a carousel in their project. I had 0 hassles with any of its features.
@@ -102,7 +107,9 @@
                          </div>
                     </div>
                     <div class="project margin-down">
-                         <img src="./images/project_2.png" alt="Neumorphic Timeline Section image">
+                         <div class="img-container">
+                              <img src="./images/project_2.png" alt="Neumorphic Timeline Section image">
+                         </div>
                          <h2>Neumorphic Timeline Section</h2>
                          <p>
                               This is one one of the first projects we did with html / css and I enjoyed it very much. I've really taken a liking to this neumorphic style of design. It really gives a 
@@ -175,7 +182,6 @@
                </div>
           </div>
      </section>
-     
 
      <!-- RESUME SECTION -->
      <section id="resume-section">
@@ -445,8 +451,6 @@
           <p>Press <span>space</span> to join us on the dark side.</p>
      </div>
 
-
-
      <!-- 3RD PARTY SCRIPTS -->
      <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
@@ -455,16 +459,13 @@
                /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
                particlesJS.load('landing-section', './scripts/particle_config.json');
 
-
-
                $(".owl-carousel").owlCarousel({
-               items: 1,
-               margin: 100,
-               loop: true,
-               stagePadding: 100,
-               dots: true,
-               // nav: true,
-               autoplay: true,
+                    items: 1,
+                    margin: 100,
+                    loop: true,
+                    stagePadding: 100,
+                    dots: true,
+                    autoplay: true,     
                });
           });
      </script>

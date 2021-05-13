@@ -1,34 +1,46 @@
 /* LIGHT MODE STYLES */
 :root {
+     --primary-color: #0D7AB9;
+     
      --primary-bg-color: #f9f9f9;
      --secondary-bg-color: #ffffff;
 
      --primary-text-color: #464633;
      --secondary-text-color: #96a0a6;
-
-     --primary-color: #0D7AB9;
+     
+     --primary-box-shadow: 20px 20px 60px #d4d4d4, -20px -20px 60px #ffffff;
+     --secondary-box-shadow: -5px -5px 10px rgb(255 255 255 / 5%), 5px 5px 10px rgb(0 0 0 / 30%);
+     --icon-box-shadow: inset -3px -3px 8px rgb(255 255 255 / 95%), inset 3px 3px 8px rgb(0 0 0 / 10%);
 }
 
-/* DARK MODE STYLES */
-.dark-mode {
-     --primary-bg-color: #18182f;
-     --secondary-bg-color: #ffffff;
 
-     --primary-text-color: #464633;
-     --secondary-text-color: #96a0a6;
 
-     --primary-color: #0D7AB9;
-}
 * {
      margin: 0;
      padding: 0;
      box-sizing: border-box;
      scroll-behavior: smooth;
+     transition: all 1s linear;
 }
 
 body {
      color: var(--primary-text-color);
      font-family: 'Poppins', sans-serif;
+}
+
+/* DARK MODE STYLES */
+body.dark-mode {
+     --primary-color: #6449e7;
+
+     --primary-bg-color: #18182f;
+     --secondary-bg-color: #121231;
+     
+     --primary-text-color: #ffffff;
+     --secondary-text-color: #96a0a6;
+     
+     --primary-box-shadow: -3px -3px 8px rgb(34 34 53 / 95%), 3px 3px 8px rgb(12 11 14 / 82%);
+     --secondary-box-shadow: -5px -5px 10px rgb(255 255 255 / 5%), 5px 5px 10px rgb(0 0 0 / 30%);
+     --icon-box-shadow: inset -5px -5px 10px rgb(255 255 255 / 5%), inset 5px 5px 10px rgb(0 0 0 / 30%);
 }
 
 .cursive {
@@ -103,6 +115,11 @@ a {
      margin-bottom: 20px;
      text-transform: capitalize;
 }
+
+img:hover {
+     transform: scale(1.1);
+}
+
 
 /* MEDIA QUERRIES FOR PHONES BETWEEN 0 - 600PX*/
 @media screen and (max-width: 600px) {

@@ -1,5 +1,6 @@
 #services-section {
     padding: 5% 10%;
+    background: var(--secondary-bg-color);
 }
 
 #services-section .section-header .cursive {
@@ -23,7 +24,7 @@
     margin: 15px auto;
     border-radius: 10px;
     background: var(--secondary-bg-color);
-    box-shadow:  20px 20px 60px #d9d9d9, -20px -20px 60px var(--secondary-bg-color);
+    box-shadow: var(--secondary-box-shadow);
 }
 
 #services-section .services-container .service .service-header {
@@ -44,8 +45,7 @@
     transition: all 0.5s;
     display: inline-block;
     color: var(--primary-color);
-    text-shadow: 1px 1px 1px white;
-    box-shadow: inset -3px -3px 8px rgb(255 255 255 / 95%), inset 3px 3px 8px rgb(0 0 0 / 10%);
+    box-shadow: var(--icon-box-shadow);
 }
 
 #services-section .services-container .service .service-header h6 {
