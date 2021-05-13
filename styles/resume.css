@@ -89,7 +89,7 @@
 #resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-1 {
     width: 84%;
     position: relative;
-    
+    animation: skill-1-fill 3s ease-in-out;
 }
 
 #resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-1::after {

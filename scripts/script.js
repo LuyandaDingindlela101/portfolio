@@ -20,3 +20,21 @@ function toggleTheme() {
 	// 	keyup EVENT, THEN toggle THE dark-mode CLASS
 	document.body.classList.toggle('dark-mode');	
 }
+
+const custom_cursor = document.querySelector(".custom-cursor");
+// FUNCTION TO MAKE THE custom_cursor MOVEWITH THE MOUSE
+document.addEventListener('mousemove', function(e) {
+	custom_cursor.style.top = (e.pageY- 10) + "px";
+	custom_cursor.style.left = (e.pageX -10) + "px";
+})
+
+
+const site_links = document.querySelectorAll("a")
+site_links.forEach(function(link) {
+	link.addEventListener("mouseover", function() {
+		custom_cursor.classList.add("expand");
+	})
+	link.addEventListener("mouseleave", function() {
+		custom_cursor.classList.remove("expand");
+	})
+})
