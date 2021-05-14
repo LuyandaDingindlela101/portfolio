@@ -18,10 +18,10 @@
      padding: 0;
      box-sizing: border-box;
      scroll-behavior: smooth;
-     transition: all .5s linear;
 }
 
 body {
+     transition: all .5s linear;
      color: var(--primary-text-color);
      font-family: 'Poppins', sans-serif;
 }

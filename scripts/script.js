@@ -79,6 +79,11 @@ const fadeEffect = setInterval(() => {
 	// SET A TIMER FOR 100 MILLISECONDS
 }, 100);
 
+document.addEventListener("DOMContentLoaded", function(){
+	console.log("gone");
+	preloader.style.display = "none";
+});
 
 // ADD A load EVENT LISTENER TO THE window, THEN RUN THE fadeEffect FUNCTION
 window.addEventListener('load', fadeEffect);
+
