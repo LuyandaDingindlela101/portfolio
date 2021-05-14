@@ -39,7 +39,7 @@
 
 @media screen and (max-width: 1200px) {
      .nav-button{
-          top: 2%;
+          top: 3%;
           width: 50px;
           right: 10%;
           z-index: 200;
@@ -47,10 +47,10 @@
           display: block;
           position: fixed;
           font-size: 30px;
-          color: var(--primary-color);
+          color: var(--primary-text-color);
           border-radius: 5px;
           background: var(--primary-bg-color);
-          border: 2px solid var(--primary-color);
+          border: 2px solid var(--primary-text-color);
      }
      .nav-list{
           position: fixed;
