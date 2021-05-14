@@ -26,6 +26,13 @@ function toggleTheme() {
 	//	IN THE document OBJECT, SELECT THE body ELEMENT AND ADD AN EVEN LISTENER FOR THE 
 	// 	keyup EVENT, THEN toggle THE dark-mode CLASS
 	document.body.classList.toggle('dark-mode');	
+
+	if(document.body.classList.contains('dark-mode')) {
+		console.log("dark");
+		document.querySelector(".logo").src = "./images/logo_white.png";
+	} else {
+		document.querySelector(".logo").src = "./images/logo.png";
+	}
 }
 
 
@@ -81,7 +88,6 @@ const fadeEffect = setInterval(() => {
 
 // 	ON THE document ADD THE DOMContentLoaded EVENT LISTENER WHICH WILL RUN ONCE ALL THE ELEMENTS HAVE BEEN LOADED
 document.addEventListener("DOMContentLoaded", function(){
-	console.log("gone");
 	preloader.style.display = "none";
 });
 
