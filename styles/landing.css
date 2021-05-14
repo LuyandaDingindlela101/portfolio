@@ -35,7 +35,6 @@
 /* MEDIA QUERRIES FOR PHONES BETWEEN 0 - 600PX*/
 @media screen and (max-width: 600px) {
      #landing-section {
-          /* height: 80vh; */
           padding-top: 60%;
      }
  

@@ -19,7 +19,6 @@
     border-radius: 5px;
     transition: all .5s ease-in-out;
     animation: bg-pop infinite 2s ease-in-out alternate;
-    /* border: 2px solid var(--primary-color); */
 }
 
 .instructions-container span:hover {
