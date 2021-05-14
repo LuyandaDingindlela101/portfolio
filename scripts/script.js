@@ -16,7 +16,7 @@ document.body.addEventListener('keyup', function(e) {
 document.body.addEventListener('keydown', function(e) {
 	// IF THE e(EVENT) code IS EQUAL TO Space, THE tagName IS NOT EQUAL TO INPUT AND T THEN CHANGE THE THEME
 	if(e.code == "Space" &&  e.target.tagName.toUpperCase() !== "INPUT" && e.target.tagName.toUpperCase() !== "TEXTAREA") {
-		// 	CALL THE toggleTheme() FUNCTION
+		// 	CALL THE preventDefault() FUNCTION WHICH WILL STOP THAT ANOYING SCROLL WHEN YOU PRESS THE SPACE BAR
 		e.preventDefault();
 	}
 })
@@ -79,6 +79,7 @@ const fadeEffect = setInterval(() => {
 	// SET A TIMER FOR 100 MILLISECONDS
 }, 100);
 
+// 	ON THE document ADD THE DOMContentLoaded EVENT LISTENER WHICH WILL RUN ONCE ALL THE ELEMENTS HAVE BEEN LOADED
 document.addEventListener("DOMContentLoaded", function(){
 	console.log("gone");
 	preloader.style.display = "none";
