@@ -30,12 +30,13 @@
           <link rel="stylesheet" href="./styles/footer.css">
           <link rel="stylesheet" href="./styles/animations.css">
           <link rel="stylesheet" href="./styles/cursor.css  ">
-          <link rel="shortcut icon" href="./images/fav.png" type="image/x-icon">
+          <link rel="stylesheet" href="./styles/preloader.css">
+          <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
      </head>
      <body>
           <!-- HEADER CONTAINING MENU ICON AND LOGO -->
           <div class="header">
-               <img src="./images/flex_logo.png" class="logo" alt="Luyanda Dingindlela logo">
+               <img src="./images/logo.png" class="logo" alt="Luyanda Dingindlela logo">
                <nav class="nav-menu">
                     <ul class="nav-list">
                          <li class="nav-item"><a href="#">Home</a></li>
@@ -364,6 +365,22 @@
                                    </p>
                               </div>
                          </div>
+                         <div class="testimonial">
+                              <div class="testimonial-header">
+                                   <div class="testimonial-image">
+                                        <img src="./images/Ashton.JPG" alt="Ashton Martin">
+                                   </div>
+                                   <div class="testimonial-authour">
+                                        <h5>Ashton Martin</h5>
+                                        <h6>Colleague</h6>
+                                   </div>
+                              </div>
+                              <div class="testimonial-body">
+                                   <p>
+                                        Luyand is a smart, hardworking and kind individual that helps and attends to the needs of other. He learns fast and makes learning easier when helping somebody with work. He has a personality that makes him easy to be around and talk. I would definitely recommend him.
+                                   </p>
+                              </div>
+                         </div>
                     </div>
                </div>
           </section>
@@ -406,7 +423,7 @@
                               </div>
                          </div>
                     </div>
-                    <form id="contact-form">
+                    <form id="contact-form" action="https://formspree.io/f/mleajbqg" method="POST">
                          <input class="contact-input" type="text" name="full_name" id="full_name" placeholder="Name" required />
                          <input class="contact-input" type="tel" name="contact_no" id="contact_no" placeholder="Contact No" required />
                          <input class="contact-input" type="email" name="email" id="email" placeholder="Email" required />
@@ -442,6 +459,11 @@
 
           <!-- CUSTOM MOUSE CURSOR -->
           <div class="custom-cursor"></div>
+
+          <!-- PRE LOADER -->
+          <div class="preloader">
+               <img src="./images/spinner.svg" alt="spinner svg">
+          </div>
 
           <!-- 3RD PARTY SCRIPTS -->
           <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>

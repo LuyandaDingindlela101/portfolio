@@ -49,3 +49,30 @@ site_links.forEach(function(link) {
 		custom_cursor.classList.remove("expand");
 	})
 })
+
+
+// 	CREATE A VARIABLE FOR preloader TO HOLD THE .preloader
+const preloader = document.querySelector('.preloader');
+// 	FUNCTION FOR THE preloader EFFECT THAT HAPPENS EVERY 100 SECONDS
+const fadeEffect = setInterval(() => {
+	// 	IF THE preloader DOESN'T HAVE THE OPACITY THEN IT WILL BE EQUAL TO AN EMPTY STRING
+	// 	HERE, WE CHECK IF THE preloader'S OPACITY IS NOT SET 
+	if (!preloader.style.opacity) {
+		// 	IF IT ISNT, SET IT TO 1
+	  preloader.style.opacity = 1;
+	}
+
+	// NOW, WE CHECK IF THE OPACITY IS MORE THAN 0 OR NOT
+	if (preloader.style.opacity > 0) {
+		// 	IF YES, THEN DECREASES ITS VALUE BY .1
+	  preloader.style.opacity -= 0.1;
+	} else {
+		// HERE, WE CLEAR THE INTERVAL TIMER THAT WAS SET OUTSIDE
+	  clearInterval(fadeEffect);
+	}
+	// SET A TIMER FOR 100 MILLISECONDS
+}, 100);
+
+
+// ADD A load EVENT LISTENER TO THE window, THEN RUN THE fadeEffect FUNCTION
+window.addEventListener('load', fadeEffect);

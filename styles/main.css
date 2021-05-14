@@ -13,8 +13,6 @@
      --icon-box-shadow: inset -3px -3px 8px rgb(255 255 255 / 95%), inset 3px 3px 8px rgb(0 0 0 / 10%);
 }
 
-
-
 * {
      margin: 0;
      padding: 0;
@@ -27,6 +25,7 @@ body {
      color: var(--primary-text-color);
      font-family: 'Poppins', sans-serif;
 }
+
 
 /* DARK MODE STYLES */
 body.dark-mode {
@@ -47,6 +46,7 @@ body.dark-mode {
      margin: auto;
      max-width: 1100px;
 }
+
 
 /* SECTION HEADER */
 .section-header {
@@ -107,6 +107,7 @@ p {
      background: var(--primary-color);
 }
 
+
 /* ON HOVER OF BUTTON, MAKE THE ARROW INSIDE TURN WHITE */
 .btn.primary:hover {
      color: var(--primary-color);
@@ -120,8 +121,6 @@ ul {
 a {
      text-decoration: none;
 }
-
-
 
 img:hover {
      transform: scale(1.1);
