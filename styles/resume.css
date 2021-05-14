@@ -219,11 +219,3 @@
     }
     
 }
-
-
-/* MEDIA QUERRY FOR SCREENS BETWEEN 600PX TO 1200PX */
-@media only screen and (max-width: 1200px) and (min-width: 600px)  {
-    #resume-section .resume-container h4 {
-        /* text-align: center; */
-    }   
-}

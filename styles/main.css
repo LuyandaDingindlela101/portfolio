@@ -21,7 +21,6 @@
 }
 
 body {
-     transition: all .5s linear;
      color: var(--primary-text-color);
      font-family: 'Poppins', sans-serif;
 }

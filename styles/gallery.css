@@ -36,6 +36,7 @@
 .gallery-container .project img {
      width: 100%;
      border-radius: 10px;
+     transition: all .5s ease-in-out;
 }
 
 .gallery-container .project h2 {
