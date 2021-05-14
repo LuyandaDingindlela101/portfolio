@@ -13,7 +13,13 @@ document.body.addEventListener('keyup', function(e) {
 		toggleTheme();
 	}
 })
-
+document.body.addEventListener('keydown', function(e) {
+	// IF THE e(EVENT) code IS EQUAL TO Space, THE tagName IS NOT EQUAL TO INPUT AND T THEN CHANGE THE THEME
+	if(e.code == "Space" &&  e.target.tagName.toUpperCase() !== "INPUT" && e.target.tagName.toUpperCase() !== "TEXTAREA") {
+		// 	CALL THE toggleTheme() FUNCTION
+		e.preventDefault();
+	}
+})
 
 // FUNCTION TO MAKE THE THEME CHANGE
 function toggleTheme() {
