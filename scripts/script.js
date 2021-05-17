@@ -28,7 +28,6 @@ function toggleTheme() {
 	document.body.classList.toggle('dark-mode');	
 
 	if(document.body.classList.contains('dark-mode')) {
-		console.log("dark");
 		document.querySelector(".logo").src = "./images/logo_white.png";
 	} else {
 		document.querySelector(".logo").src = "./images/logo.png";
@@ -60,6 +59,10 @@ site_links.forEach(function(link) {
 	link.addEventListener("mouseleave", function() {
 		// 	WHEN THE MOUSE LEAVES THE Link, REMOVE THE expand CLASS
 		custom_cursor.classList.remove("expand");
+	})
+
+	link.addEventListener("click", function() {
+		document.getElementsByClassName('nav-list')[0].classList.toggle('active');
 	})
 })
 
@@ -93,4 +96,3 @@ document.addEventListener("DOMContentLoaded", function(){
 
 // ADD A load EVENT LISTENER TO THE window, THEN RUN THE fadeEffect FUNCTION
 window.addEventListener('load', fadeEffect);
-
