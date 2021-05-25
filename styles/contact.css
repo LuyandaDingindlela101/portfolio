@@ -82,6 +82,7 @@
      font-weight: 400;
      margin-bottom: 20px;
      background-color: transparent;
+     color: var(--secondary-text-color);
      border-bottom: 2px solid var(--primary-color);
 }
 
