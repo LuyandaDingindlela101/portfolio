@@ -5,6 +5,12 @@
     justify-content: space-between;
 }
 
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .footer .copyright {
     text-align: right;
 }
@@ -16,8 +22,12 @@
         flex-direction: column;
     }
 
+    .footer-container {
+        flex-direction: column;
+    }
+
     .footer .design {
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
     }
 
     .footer .copyright {
