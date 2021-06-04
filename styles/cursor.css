@@ -12,5 +12,4 @@
 
 .custom-cursor.expand {
      transform: scale(2);
-     border: 1px solid var(--primary-color);
 }
