@@ -3,7 +3,7 @@
      width: 100%;
      z-index: 10;
      display: flex;
-     padding: 2% 10%;
+     padding: 1% 10%;
      position: fixed;
      align-items: center;
      justify-content: space-between;
@@ -11,83 +11,136 @@
      box-shadow:  var(--secondary-box-shadow)
 }
 
-.header .header-container {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-}
-
 .header .logo {
-     height: 65px;
+     height: 50px;
 }
 
-.nav-menu .nav-list {
-     display: flex;
-     justify-content: space-between;
-     background: var(--secondary-bg-color);
+/* MENU BUTTON */
+.menu-btn-container {
+     z-index: 2;
+	width: 50px;
+	height: 50px;
+	display: flex;
+     cursor: pointer;
+	align-items: center;
+	justify-content: flex-end;
 }
 
-.nav-menu .nav-list .nav-item a {
-     padding: 0 50px;
-     font-size: 16px;
-     font-weight: 600;
-     white-space: nowrap;
-     color: var(--secondary-text-color);
+.menu-btn-container .menu-btn {
+	width: 30px;
+	height: 3px;
+	position: relative;
+	background: var(--primary-color);
+	transition: all 1s ease-in-out;
 }
 
-.nav-menu .nav-list .nav-item a:last-child {
-     padding-right: 0;
+.menu-btn-container .menu-btn::before {
+	right: 0;
+	top: -10px;
+	width: 50px;
+	height: 3px;
+	content: '';
+	position: absolute;
+	background: var(--primary-color);
+	transition: all 1s ease-in-out;
 }
 
-.nav-menu .nav-list .nav-item a:hover {
-     color: var(--primary-color);
-     transition: color .5s ease-in-out;
+.menu-btn-container .menu-btn::after {
+	right: 0;
+	width: 40px;
+	height: 3px;
+	content: '';
+	bottom: -10px;
+	position: absolute;
+	background: var(--primary-color);
+	transition: all 1s ease-in-out;
 }
 
-.nav-button{
-     display: none;
+.menu-btn-container:hover .menu-btn {
+	width: 50px;
 }
 
-@media screen and (max-width: 1200px) {
-     .nav-button{
-          top: 3%;
-          width: 50px;
-          right: 10%;
-          z-index: 200;
-          height: 50px;
-          display: block;
-          position: fixed;
-          font-size: 30px;
-          color: var(--primary-text-color);
-          border-radius: 5px;
-          background: var(--primary-bg-color);
-          border: 2px solid var(--primary-text-color);
-     }
-     .nav-list{
-          position: fixed;
-          top: -100%;
-          left: 0;
-          transition: all 0.4s linear;
-          display: flex;
-          flex-direction: column;
-          width: 100vw;
-          height: 100vh;
-          justify-content: center !important;
-          align-items: center;
-          z-index: 100;
-     }
-     .nav-list.active{
-          top: 0;
-     }
-
-     .nav-menu .nav-list .nav-item {
-          margin-bottom: 20px;
-     }
-
-     .nav-menu .nav-list .nav-item a {
-          padding: 0;
-          font-size: 10vw;
-          color: var(--secondary-bg-color);
-          text-shadow: 1px 1px 0 var(--primary-color), -1px -1px 0 var(--primary-color), 1px -1px 0 var(--primary-color), -1px 1px 0 var(--primary-color), 1px 1px 0 var(--primary-color);
-     }
+.menu-btn-container:hover .menu-btn::after {
+	width: 50px;
 }
+
+/* NAV BUTTON CONTAINER ACTIVE */
+.menu-btn-container.active .menu-btn {
+	background: #ecf0f1;
+	background: transparent;
+}
+
+.menu-btn-container.active .menu-btn::before {
+     top: 0;
+     bottom: 0;
+	background: #ecf0f1;
+	transform: rotate(45deg);
+}
+
+.menu-btn-container.active .menu-btn::after {
+     top: 0;
+     bottom: 0;
+	width: 50px;
+	background: #ecf0f1;
+	transform: rotate(315deg);
+}
+
+/* NAV CONTAINER */
+.nav-container {
+	top: 0;
+	width: 50%;
+	right: -150%;
+	display: grid;
+	position: fixed;
+	cursor: pointer;
+	min-width: 400px;
+	min-height: 100vh;
+	background: var(--primary-color);
+	place-content: center;
+	transition: all .5s ease-in-out;
+}
+
+.nav-container.active {
+	right: 0;
+}
+
+.nav-container .nav-list {
+	list-style: none;
+}
+
+.nav-container .nav-list .nav-item {
+	margin-bottom: 50px;
+}
+
+.nav-container .nav-list .nav-item a {
+	padding: 15px;
+	font-size: 3vw;
+	font-weight: 600;
+	position: relative;
+	letter-spacing: 5px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: var(--primary-color);
+	transition: color .5s ease-in-out;
+  	text-shadow: -1px -1px 0 #ecf0f1, 1px -1px 0 #ecf0f1, -1px 1px 0 #ecf0f1, 1px 1px 0 #ecf0f1;
+}
+
+.nav-container .nav-list .nav-item a::before {
+	bottom: 0;
+	left: -20px;
+	content: '';
+	width: 40px;
+	height: 10%;
+	position: absolute;
+	background: #ecf0f1;
+	transition: width .5s ease-in-out;
+}
+
+.nav-container .nav-list .nav-item:hover a {
+	color: #ecf0f1;
+}
+
+.nav-container .nav-list .nav-item a:hover::before {
+	width: 110%;
+}
+

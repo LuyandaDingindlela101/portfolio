@@ -1,7 +1,13 @@
-//	Toggle Menu for mobile function
-function toggleMenu(){
-	//	IN THE document OBJECT, SELECT AN ELEMENT WITH THE active CLASS AND TOGGLE THE active CLASS
-	document.getElementsByClassName('nav-list')[0].classList.toggle('active')
+// GET THE MENU BTN CONTAINER
+let menu_btn_container = document.querySelector(".menu-btn-container");
+
+// ADD A CLICK EVENT LISTENER TO THE NAV BTN CONTAINER
+menu_btn_container.addEventListener("click", toggleMenu);
+
+// FUNCTION WILL TOGGLE THE ACTIVE CLASS ON THE menu_btn_container AND NAV CONTAINER
+function toggleMenu() {
+	menu_btn_container.classList.toggle("active");
+	document.querySelector(".nav-container").classList.toggle("active");
 }
 
 //	IN THE document OBJECT, SELECT THE body ELEMENT AND ADD AN EVEN LISTENER FOR THE 
@@ -62,7 +68,7 @@ site_links.forEach(function(link) {
 	})
 
 	link.addEventListener("click", function() {
-		document.getElementsByClassName('nav-list')[0].classList.toggle('active');
+		toggleMenu();
 	})
 })
 
