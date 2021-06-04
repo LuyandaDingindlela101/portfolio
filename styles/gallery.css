@@ -7,6 +7,17 @@
      font-size: 50px;
 }
 
+#gallery-section .filter-container {
+	display: flex;
+	margin-bottom: 50px;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+#gallery-section .filter-container .btn {
+	margin: 0 20px 0 0;
+}
+
 #gallery-section .gallery-container .projects-container {
      display: flex;
      align-items: flex-start;
