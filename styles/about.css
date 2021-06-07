@@ -76,10 +76,15 @@
 
 #about-section .about-container .about-details .details-container .detail p {
      font-size: 17px;
-     font-weight: 600;
      margin-bottom: 0;
      position: relative;
      padding-left: 25px;
+}
+
+#about-section .about-container .about-details .details-container .detail p span,
+#about-section .about-container .about-details .details-container .detail p a {
+     font-size: 14px;
+     font-weight: 400;
 }
 
 #about-section .about-container .about-details .details-container .detail p::before {
