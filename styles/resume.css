@@ -61,7 +61,6 @@
     color: var(--primary-text-color);
 }   
 
-
 /* RESUME SKILL BAR */
 #resume-section .experience-container .resume-item .skills-container .skill {
     margin-bottom: 15px;
@@ -100,7 +99,7 @@
     transform: translateY(-50%);
 }
 
-/* TIME MANAGEMENT */
+/* CURIOUSITY BAR */
 #resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-2 {
     width: 71%;
     position: relative;
@@ -115,7 +114,7 @@
     transform: translateY(-50%);
 }
 
-/*  */
+/* CREATIVITY BAR */
 #resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-3 {
     width: 88%;
     position: relative;
@@ -130,6 +129,7 @@
     transform: translateY(-50%);
 }
 
+/* HELPING OTHERS BAR */
 #resume-section .experience-container .resume-item .skills-container .skill .outer-bar .inner-bar.skill-4 {
     width: 90%;
     position: relative;
@@ -144,6 +144,25 @@
     transform: translateY(-50%);
 }
 
+/* HOBBIES CONTAINER */
+#resume-section .experience-container .resume-item .hobbies-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#resume-section .experience-container .resume-item .hobbies-container .hobby {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 20px 10px 0;
+    background: var(--primary-bg-color);
+    box-shadow:  var(--secondary-box-shadow);
+}
+
+#resume-section .experience-container .resume-item .hobbies-container .hobby span {
+    font-weight: 500;
+}
 
 /* TECH STACK SECTION */
 #resume-section .tech-stacks .stack-container {
