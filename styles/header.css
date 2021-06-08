@@ -71,15 +71,15 @@
 }
 
 .header .menu-btn-container.active .menu-btn::before {
-     top: 0;
-     bottom: 0;
+	top: 0;
+	bottom: 0;
 	background: #ecf0f1;
 	transform: rotate(45deg);
 }
 
 .header .menu-btn-container.active .menu-btn::after {
-     top: 0;
-     bottom: 0;
+	top: 0;
+	bottom: 0;
 	width: 50px;
 	background: #ecf0f1;
 	transform: rotate(315deg);
