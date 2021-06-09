@@ -149,7 +149,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 #resume-section .experience-container .resume-item .hobbies-container .hobby {
