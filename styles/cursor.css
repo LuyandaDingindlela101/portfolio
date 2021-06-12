@@ -13,3 +13,11 @@
 .custom-cursor.expand {
      transform: scale(2);
 }
+
+
+/* MEDIA QUERY FOR DEVICES THAT DON'T RESPOND TO HOVER AT ALL, DEVICES LIKE TOUCH SCREEN */
+@media (hover: none) {
+     .custom-cursor {
+          display: none;
+     }
+}
