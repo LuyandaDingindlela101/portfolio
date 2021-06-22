@@ -2,6 +2,7 @@
      width: 40px;
      height: 40px;
      z-index: 9999;
+     display: block;
      position: absolute;
      border-radius: 50%;
      pointer-events: none;
@@ -12,4 +13,18 @@
 
 .custom-cursor.expand {
      transform: scale(2);
+}
+
+/* MEDIA QUERRIES FOR DEVICES BETWEEN 0 - 600PX*/
+@media only screen and (max-width: 700px) {
+     .custom-cursor {
+          display: none;
+     }
+}
+
+/* MEDIA QUERRY FOR TOUCH SCREENS AND SMARTPHONES */
+@media (hover: none) and (pointer: coarse) {
+     .custom-cursor {
+          display: none;
+     }
 }
