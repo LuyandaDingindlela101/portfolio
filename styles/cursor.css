@@ -15,15 +15,9 @@
      transform: scale(2);
 }
 
-/* MEDIA QUERRIES FOR DEVICES BETWEEN 0 - 600PX*/
-@media only screen and (max-width: 700px) {
-     .custom-cursor {
-          display: none;
-     }
-}
 
-/* MEDIA QUERRY FOR TOUCH SCREENS AND SMARTPHONES */
-@media (hover: none) and (pointer: coarse) {
+/* MEDIA QUERY FOR DEVICES THAT DON'T RESPOND TO HOVER AT ALL, DEVICES LIKE TOUCH SCREEN */
+@media (hover: none) {
      .custom-cursor {
           display: none;
      }

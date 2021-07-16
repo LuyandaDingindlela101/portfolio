@@ -35,8 +35,11 @@ function toggleTheme() {
 
 	if(document.body.classList.contains('dark-mode')) {
 		document.querySelector(".logo").src = "./images/logo_white.png";
+		document.querySelector(".instruction").innerHTML = "Press <span>space</span> to join us on the light side."
 	} else {
 		document.querySelector(".logo").src = "./images/logo.png";
+		document.querySelector(".instruction").innerHTML = "Press <span>space</span> to join us on the dark side."
+
 	}
 }
 
@@ -55,7 +58,7 @@ document.addEventListener('mousemove', function(e) {
 // 	querySelectorAll RETURNS A LIST[] OF ALL THE a TAGS
 const site_links = document.querySelectorAll("a")
 // 	HERE, WE LOOP THROUGH THE LIST 
-site_links.forEach(function(link) {
+site_links.forEach(link => {
 	//	ADD A mouseover EVENT LISTENER TO EACH INDIVIDUAL link
 	link.addEventListener("mouseover", function() {
 		// 	WHEN THE link IS HOVERED ON, ADD THE expand CLASS
@@ -66,11 +69,17 @@ site_links.forEach(function(link) {
 		// 	WHEN THE MOUSE LEAVES THE Link, REMOVE THE expand CLASS
 		custom_cursor.classList.remove("expand");
 	})
+});
 
+const nav_links = document.querySelectorAll(".nav-link");
+
+nav_links.forEach(link => {
 	link.addEventListener("click", function() {
 		toggleMenu();
 	})
 })
+
+
 
 
 // 	CREATE A VARIABLE FOR preloader TO HOLD THE .preloader

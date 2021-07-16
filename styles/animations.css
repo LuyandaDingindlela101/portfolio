@@ -40,17 +40,3 @@
         width: 90%;
     }
 }
-
-
-/* SPACE BUTTON BACKGROUND */
-@keyframes bg-pop {
-    0% {
-        color: var(--primary-text-color);
-        background: var(--primary-color);
-    }
-    100% {
-        color: var(--primary-color);
-        background: var(--primary-text-color);
-    }
-
-}
