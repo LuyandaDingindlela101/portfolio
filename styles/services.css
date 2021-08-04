@@ -21,6 +21,7 @@
     width: 80%;
     padding: 30px;
     max-width: 350px;
+    min-height: 260px;
     margin: 15px auto;
     border-radius: 10px;
     background: var(--secondary-bg-color);

@@ -36,11 +36,16 @@
     width: 600px;
     padding: 30px;
     max-width: 95%;
+    min-height: 300px;
     margin-bottom: 20px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    border-left: 4px solid var(--primary-color);
     box-shadow: var(--primary-box-shadow);
+    border-left: 4px solid var(--primary-color);
+}
+
+#resume-section .experience-container .resume-item:nth-child(4) {
+    min-height: 240px;
 }
 
 #resume-section .education-container .resume-item h5, 
