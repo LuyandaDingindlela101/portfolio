@@ -1,7 +1,6 @@
-// GET THE MENU BTN CONTAINER
 let menu_btn_container = document.querySelector(".menu-btn-container");
 
-// ADD A CLICK EVENT LISTENER TO THE NAV BTN CONTAINER
+// ADD A CLICK EVENT LISTENER TO THE menu_btn_container
 menu_btn_container.addEventListener("click", toggleMenu);
 
 // FUNCTION WILL TOGGLE THE ACTIVE CLASS ON THE menu_btn_container AND NAV CONTAINER
@@ -30,16 +29,15 @@ document.body.addEventListener('keydown', function(e) {
 // FUNCTION TO MAKE THE THEME CHANGE
 function toggleTheme() {
 	//	IN THE document OBJECT, SELECT THE body ELEMENT AND ADD AN EVEN LISTENER FOR THE 
-	// 	keyup EVENT, THEN toggle THE dark-mode CLASS
-	document.body.classList.toggle('dark-mode');	
+	// 	keyup EVENT, THEN toggle THE light-mode CLASS
+	document.body.classList.toggle('light-mode');	
 
-	if(document.body.classList.contains('dark-mode')) {
-		document.querySelector(".logo").src = "./images/logo_white.png";
-		document.querySelector(".instruction").innerHTML = "Press <span>space</span> to join us on the light side."
-	} else {
+	if(document.body.classList.contains('light-mode')) {
 		document.querySelector(".logo").src = "./images/logo.png";
 		document.querySelector(".instruction").innerHTML = "Press <span>space</span> to join us on the dark side."
-
+	} else {
+		document.querySelector(".logo").src = "./images/logo_white.png";
+		document.querySelector(".instruction").innerHTML = "Press <span>space</span> to join us on the light side."
 	}
 }
 

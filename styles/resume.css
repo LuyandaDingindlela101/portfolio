@@ -19,16 +19,12 @@
     margin-bottom: 20px;
 }
 
-
-
-
 /* RESUME CONTAINER */
 #resume-section .resume-container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
-
 
 /* RESUME ITEM */
 #resume-section .education-container .resume-item, 
@@ -181,7 +177,7 @@
 #resume-section .tech-stacks .stack-container .stack {
     width: 80%;
     padding: 30px;
-    max-width: 250px;
+    max-width: 300px;
     border-radius: 10px;
     margin-bottom: 30px;
     background: var(--primary-bg-color);
@@ -194,7 +190,7 @@
 }
 
 #resume-section .tech-stacks .stack-container .stack h6 {
-    font-size: 40px;
+    font-size: 30px;
     color: var(--primary-color);
 }
 

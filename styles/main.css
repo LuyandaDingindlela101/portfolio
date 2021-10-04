@@ -1,16 +1,16 @@
 /* LIGHT MODE STYLES */
 :root {
-     --primary-color: #0D7AB9;
-     
-     --primary-bg-color: #f9f9f9;
-     --secondary-bg-color: #ffffff;
+     --primary-color: #6449e7;
 
-     --primary-text-color: #464633;
+     --primary-bg-color: #18182f;
+     --secondary-bg-color: #121231;
+     
+     --primary-text-color: #ffffff;
      --secondary-text-color: #96a0a6;
      
-     --primary-box-shadow: 20px 20px 60px #d4d4d4, -20px -20px 60px #ffffff;
+     --primary-box-shadow: -3px -3px 8px rgb(34 34 53 / 95%), 3px 3px 8px rgb(12 11 14 / 82%);
      --secondary-box-shadow: -5px -5px 10px rgb(255 255 255 / 5%), 5px 5px 10px rgb(0 0 0 / 30%);
-     --icon-box-shadow: inset -3px -3px 8px rgb(255 255 255 / 95%), inset 3px 3px 8px rgb(0 0 0 / 10%);
+     --icon-box-shadow: inset -5px -5px 10px rgb(255 255 255 / 5%), inset 5px 5px 10px rgb(0 0 0 / 30%);
 }
 
 * {
@@ -29,24 +29,24 @@ body {
 
 
 /* DARK MODE STYLES */
-body.dark-mode {
-     --primary-color: #6449e7;
-
-     --primary-bg-color: #18182f;
-     --secondary-bg-color: #121231;
+body.light-mode {
+     --primary-color: #0D7AB9;
      
-     --primary-text-color: #ffffff;
+     --primary-bg-color: #f9f9f9;
+     --secondary-bg-color: #ffffff;
+
+     --primary-text-color: #464633;
      --secondary-text-color: #96a0a6;
      
-     --primary-box-shadow: -3px -3px 8px rgb(34 34 53 / 95%), 3px 3px 8px rgb(12 11 14 / 82%);
+     --primary-box-shadow: 20px 20px 60px #d4d4d4, -20px -20px 60px #ffffff;
      --secondary-box-shadow: -5px -5px 10px rgb(255 255 255 / 5%), 5px 5px 10px rgb(0 0 0 / 30%);
-     --icon-box-shadow: inset -5px -5px 10px rgb(255 255 255 / 5%), inset 5px 5px 10px rgb(0 0 0 / 30%);
+     --icon-box-shadow: inset -3px -3px 8px rgb(255 255 255 / 95%), inset 3px 3px 8px rgb(0 0 0 / 10%);
 }
 
 .container {
      width: 100%;
      margin: auto;
-     max-width: 1100px;
+     max-width: 1000px;
 }
 
 
