@@ -54,6 +54,7 @@
      font-size: 30px;
      font-weight: 700;
      margin-bottom: 15px;
+     text-transform: capitalize;
 }
 
 .gallery-container .btns-container {
