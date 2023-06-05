@@ -28,13 +28,14 @@
      width: 45%;
      padding: 10px;
      max-width: 500px;
+     min-height: 550px;
      border-radius: 10px;
      transition: all .5 ease-in-out;
      box-shadow: var(--primary-box-shadow);
 }
 
-.gallery-container .project.margin-down {
-     margin-top: 150px;
+.gallery-container .project:nth-child(even) {
+     margin-top: 100px;
 }
 
 .gallery-container .project .img-container {
